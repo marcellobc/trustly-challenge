@@ -1,3 +1,8 @@
-const app = require("./app");
+const app = require('./app');
 
-app.listen(3333, () => console.log("running on 3333"));
+const PORT = process.env.PORT || 3333;
+
+// eslint-disable-next-line no-console
+const server = app.listen(PORT, () => console.log(`running on ${PORT}`));
+
+server.setTimeout(500000);

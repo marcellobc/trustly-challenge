@@ -1,7 +1,7 @@
 class HttpException {
   constructor(
     statusCode = 500,
-    message = "internal server error",
+    message = 'internal server error',
     occurrences = null
   ) {
     this.message = message;

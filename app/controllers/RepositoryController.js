@@ -1,4 +1,4 @@
-const GithubScrapper = require("../utils/GithubScraper");
+const GithubScrapper = require('../utils/GithubScraper');
 
 class RepositoryController {
   static async show(req, res) {

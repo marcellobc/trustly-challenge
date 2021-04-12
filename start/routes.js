@@ -1,7 +1,7 @@
-const router = require("express").Router();
+const router = require('express').Router();
 
-const RepositoryController = require("../app/controllers/RepositoryController");
+const RepositoryController = require('../app/controllers/RepositoryController');
 
-router.get("/:username/:repository", RepositoryController.show);
+router.get('/:username/:repository', RepositoryController.show);
 
 module.exports = router;

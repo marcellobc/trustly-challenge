@@ -1,5 +1,6 @@
-const HttpException = require("../exceptions/HttpException");
+const HttpException = require('../exceptions/HttpException');
 
+// eslint-disable-next-line no-unused-vars
 function errorHandler(error, req, res, next) {
   return error instanceof HttpException
     ? res.status(error.statusCode).json(error)
